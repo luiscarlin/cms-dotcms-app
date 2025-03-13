@@ -19,7 +19,7 @@ export default function PostHeader({ title, coverImage, author }) {
           title={title}
           width={2000}
           height={1000}
-          src={coverImage.idPath}
+          src={coverImage.fileAsset.idPath}
           objectFit="cover"
           layout={"intrinsic"}
         />

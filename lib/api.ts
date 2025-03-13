@@ -63,7 +63,9 @@ export async function getPostAndMorePosts(slug, preview) {
         }
         postingDate
         image {
-          idPath
+          fileAsset {
+            idPath
+          }
         }
         author {
           firstName
@@ -80,7 +82,9 @@ export async function getPostAndMorePosts(slug, preview) {
         teaser
         postingDate
         image {
-          idPath
+          fileAsset {
+            idPath
+          }
         }
         author {
           firstName
@@ -161,7 +165,9 @@ export async function getAllPostsForHome(preview) {
         }
         urlTitle
         image {
-          idPath
+          fileAsset {
+            idPath
+          }
         }
       }
     }

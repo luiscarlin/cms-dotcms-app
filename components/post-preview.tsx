@@ -11,6 +11,7 @@ export default function PostPreview({
   author,
   slug,
 }) {
+
   return (
     <div>
       <div className="mb-5">
@@ -19,7 +20,7 @@ export default function PostPreview({
           height={600}
           title={title}
           slug={slug}
-          src={coverImage.idPath}
+          src={coverImage?.fileAsset.idPath}
           objectFit="cover"
           layout={"intrinsic"}
         />

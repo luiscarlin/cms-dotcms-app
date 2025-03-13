@@ -9,6 +9,9 @@ import { CMS_NAME } from "@lib/constants";
 
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0];
+
+  console.log(JSON.stringify(allPosts, null, 2));
+
   const morePosts = allPosts.slice(1);
   const title = `Next.js Blog Example with ${CMS_NAME}`;
   return (

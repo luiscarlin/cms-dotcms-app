@@ -22,7 +22,7 @@ export default function HeroPost({
           slug={slug}
           objectFit="cover"
           layout={"intrinsic"}
-          src={coverImage.idPath}
+          src={coverImage?.fileAsset.idPath}
           alt={`Cover Image for ${title}`}
           className={cn("shadow-small", {
             "hover:shadow-medium transition-shadow duration-200": slug,

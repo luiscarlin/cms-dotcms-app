@@ -36,7 +36,7 @@ export default function Post({ post, morePosts, preview }) {
                 <title>{title}</title>
                 <meta
                   property="og:image"
-                  content={`${process.env.NEXT_PUBLIC_DOTCMS_HOST}${post.image.idPath}`}
+                  content={`${process.env.NEXT_PUBLIC_DOTCMS_HOST}${post.image.fileAsset.idPath}`}
                 />
               </Head>
 
